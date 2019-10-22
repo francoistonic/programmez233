@@ -1,0 +1,543 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;\csgenericrgb\c0\c0\c0;}
+{\info
+{\author HUART Robin (ENGIE SA)}}\paperw11900\paperh16840\margl1417\margr1417\margb1417\margt1417\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, DISABLED, Label, Tk\uc0\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Hello world').pack()\u8232 \u8232 button1 = Button(root, text='Activ\'e9', command=lambda: None)\u8232 button2 = Button(root, text='Modifier l\\'autre bouton',\u8232                  command=lambda: button1.config(text='D\'e9sactiv\'e9',\u8232                                                 state=DISABLED,\u8232                                                 cursor='watch'))\u8232 button1.pack()\u8232 button2.pack()\u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Label, Tk\uc0\u8232 from tkinter.ttk import Combobox\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Choisissez un nombre:').pack()\u8232 my_box = Combobox(root, values=(2, 4, 6, 8))\u8232 my_box.current(2)\u8232 my_box.pack()\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, Label, Tk\uc0\u8232 from tkinter import BOTTOM, LEFT, RIGHT, TOP\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Bienvenue dans Tkinter').pack()\u8232 Button(root, text='Bouton du bas').pack(side=BOTTOM)\u8232 Button(root, text='Bouton \'e0 gauche').pack(side=LEFT)\u8232 Button(root, text='Bouton \'e0 droite').pack(side=RIGHT)\u8232 Button(root, text='Bouton en haut').pack(side=TOP)\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3       \
+\
+ \
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, Label, Tk\uc0\u8232 from tkinter import BOTH, X, Y\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Bienvenue dans Tkinter').pack(fill=X)\u8232 Button(root, text='Bouton 1').pack(fill=X)\u8232 Button(root, text='Bouton 2').pack(fill=Y)\u8232 Button(root, text='Bouton 3').pack(fill=BOTH)\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, Label, Tk\uc0\u8232 from tkinter import BOTH, X, Y\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Bienvenue dans Tkinter').pack(fill='x')\u8232 Button(root, text='Bouton 1').pack(fill='x', expand=True)\u8232 Button(root, text='Bouton 2').pack(fill='y', expand=True)\u8232 Button(root, text='Bouton 3').pack(fill='both', expand=True)\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, Label, Tk\uc0\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Bienvenue dans Tkinter').grid(row=0, column=0)\u8232 \u8232 Label(root, text='Ici c\\'est le NW').grid(row=1, column=0)\u8232 Button(root, text='Bouton du NE').grid(row=1, column=1)\u8232 Label(root, text='Ici c\\'est le SW').grid(row=2, column=0)\u8232 Button(root, text='Bouton du SE').grid(row=2, column=1)\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, Label, Tk\uc0\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Bienvenue dans Tkinter').grid(row=0, column=0)\u8232 \u8232 Label(root, text='Ici c\\'est le NW').grid(row=1, column=0)\u8232 Button(root, text='Bouton du NE').grid(row=1, column=1)\u8232 Label(root, text='Ici c\\'est le SW').grid(row=2, column=0)\u8232 Button(root, text='Bouton du SE').grid(row=2, column=1)\u8232 \u8232 for i in range(3):\u8232     root.rowconfigure(i, weight=1)\u8232 for j in range(2):\u8232     root.columnconfigure(j, weight=1)\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, Label, Tk\uc0\u8232 from tkinter import E, N, S, W\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Bienvenue dans Tkinter').grid(row=0, column=0)\u8232 \u8232 Label(root, text='Ici c\\'est le NW').grid(row=1, column=0, sticky=N+E)\u8232 Button(root, text='Bouton du NE').grid(row=1, column=1, sticky=E)\u8232 Label(root, text='Ici c\\'est le SW').grid(row=2, column=0, sticky=S+W+N)\u8232 Button(root, text='Bouton du SE').grid(row=2, column=1, sticky=W+E)\u8232 \u8232 for i in range(3):\u8232     root.rowconfigure(i, weight=1)\u8232 for j in range(2):\u8232     root.columnconfigure(j, weight=1)\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, Label, Tk\uc0\u8232 from tkinter import E, N, S, W\u8232 \u8232 root = Tk()\u8232 root.title("Tuto Tkinter")\u8232 root.config(bg='silver')\u8232 \u8232 Label(root, text='Bienvenue dans Tkinter').grid(row=0, column=0, columnspan=2, sticky='nsew')\u8232 \u8232 Label(root, text='Ici c\\'est le NW').grid(row=1, rowspan=2, column=0, sticky=N+E+S)\u8232 Button(root, text='Bouton du NE').grid(row=1, column=1, sticky=E)\u8232 Label(root, text='Ici c\\'est le SW').grid(row=2, column=0, sticky=S+W+N)\u8232 Button(root, text='Bouton du SE').grid(row=2, column=1, sticky=W+E)\u8232 \u8232 for i in range(3):\u8232     root.rowconfigure(i, weight=1)\u8232 for j in range(2):\u8232     root.columnconfigure(j, weight=1)\u8232 \u8232 root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 from tkinter import Button, Frame, Label, Tk\
+\
+root = Tk()\
+root.title("Tuto Tkinter")\
+root.config(bg='silver')\
+\
+Label(root, text='Bienvenue dans Tkinter', bg='cyan').pack(fill='both', expand=True)\
+\
+my_frame = Frame(root)\
+my_frame.pack(side='left')\
+\
+Label(my_frame, text='Ici c\\'est le NW', bg='red').grid(row=0, column=0)\
+Button(my_frame, text='Bouton du NE').grid(row=0, column=1)\
+Label(my_frame, text='Ici c\\'est le SW', bg='red').grid(row=1, column=0)\
+Button(my_frame, text='Bouton du SE').grid(row=1, column=1)\
+\
+root.mainloop()\
+\
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 from tkinter import Button, LabelFrame, Label, Tk\
+\
+root = Tk()\
+root.title("Tuto Tkinter")\
+root.config(bg='silver')\
+\
+Label(root, text='Bienvenue dans Tkinter', bg='cyan').pack(fill='both', expand=True)\
+\
+my_frame = LabelFrame(root, text="Partie isol\'e9e")\
+my_frame.pack(side='left')\
+\
+Label(my_frame, text='Ici c\\'est le NW', bg='red').grid(row=0, column=0)\
+Button(my_frame, text='Bouton du NE').grid(row=0, column=1)\
+Label(my_frame, text='Ici c\\'est le SW', bg='red').grid(row=1, column=0)\
+Button(my_frame, text='Bouton du SE').grid(row=1, column=1)\
+\
+root.mainloop()\
+\
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+
+\fs32 \cf0 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+
+\fs24 \cf3 \
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf2 from tkinter import Label, Tk, Toplevel\
+\
+root = Tk()\
+root.title("Tuto Tkinter")\
+Label(root, text='Bienvenue dans Tkinter', bg='yellow').pack(fill='both', expand=True)\
+\
+new_window = Toplevel(root)\
+new_window.title("Nouvelle fen\'eatre")\
+\pard\pardeftab720\li360\pardirnatural\partightenfactor0
+\cf2 Label(new_window, text='Bienvenue dans la fen\'eatre secondaire', bg='green').pack(fill='both', expand=True)\
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf2 \
+root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qc\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\
+\
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf2 from tkinter import Label, Tk\
+from tkinter.messagebox import askquestion, askretrycancel, showerror, showinfo, showwarning\
+from tkinter.filedialog import askopenfile\
+from tkinter.colorchooser import askcolor\
+\
+root = Tk()\
+root.title("Tuto Tkinter")\
+Label(root, text='Bienvenue dans Tkinter', bg='yellow').pack(fill='both', expand=True)\
+\
+question = askquestion(title="Question", message="Aimez-vous Python ?")\
+retry_cancel = askretrycancel(title="RetryCancel", message="Une autre chance ?")\
+\
+showerror(title="Oups", message="J'ai tout cass\'e9")\
+showwarning(title="Attention", message="Ce message s'auto-d\'e9truira dans 2s")\
+showinfo(title="Scoop", message="La Terre aurait plut\'f4t la forme d'une grosse patate. Co\'efncidence ?")\
+\
+file = askopenfile()\
+print(file)\
+color = askcolor()\
+print(color)\
+\
+root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf2 from tkinter import Tk\
+from tkinter import BOTH, N, S, X\
+from tkinter import Label, Menu\
+from tkinter.ttk import Button\
+from tkinter.messagebox import showinfo\
+\
+from game_area import GameArea\
+from preferences import SettingsWindow\
+\
+\
+def about():\
+    """\
+    Display an informative window.\
+    """\
+    showinfo('\'c0 propos',\
+             message="Bienvenue dans cette demo de Mastermind avec Tkinter.\\n\\n"\
+                     "Ce jeu consiste \'e0 trouver un code secret compos\'e9 de plusieurs couleurs, sachant que "\
+                     "chaque couleur peut appara\'eetre plusieurs fois.\\n\\n"\
+                     "Vous pouvez configurer le nombre de couleurs diff\'e9rentes, la taille du code secret "\
+                     "et le nombre de tentatives que vous pouvez effectuer dans le menu Pr\'e9f\'e9rences.")\
+\
+\
+# Instantiate the global window:\
+root = Tk()\
+root.title('Mastermind')\
+root.resizable(True, True)\
+\
+\
+# Create canvas in which to draw the pickable pegs, the playing field and the guess results:\
+Label(root,\
+      text='[F1] \'c0 propos - [F2] Pr\'e9f\'e9rences - [F5] Nouvelle partie - [ESC] Quitter',\
+      foreground="white",\
+      background="blue").pack(anchor=N, fill=X)\
+\
+\
+# Create the game area:\
+game_area = GameArea(text="Aire de jeu")\
+game_area.pack(anchor=N, expand=True, fill=BOTH)\
+\
+\
+# Create and populate the main menu:\
+root_menu = Menu(root)\
+root['menu'] = root_menu\
+main_cascade = Menu(root_menu)\
+root_menu.add_cascade(label='Mastermind', menu=main_cascade)\
+main_cascade.add_command(label='Pr\'e9f\'e9rences', command=lambda: SettingsWindow(game_area))\
+main_cascade.add_separator()\
+main_cascade.add_command(label='\'c0 propos', command=about)\
+\
+\
+# Menu shortcuts:\
+root.bind("<F1>", lambda _event: about())\
+root.bind("<F2>", lambda _event: SettingsWindow(game_area))\
+\
+\
+# Add a last button for quitting the game:\
+Button(text='Quitter [ESC]', command=root.destroy).pack(anchor=S, fill=X)\
+root.bind('<Escape>', lambda _event: root.destroy())\
+\
+\
+# Launch the main loop that catches all user interactions:\
+root.mainloop()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf2 from tkinter import Button, IntVar, Label, Radiobutton, Spinbox, Toplevel\
+from tkinter.ttk import Combobox\
+\
+\
+ALL_COLORS = ['red', 'blue', 'yellow', 'black', 'green', 'purple', 'orange', 'cyan']\
+\
+\
+SETTINGS = \{\
+    'n_colors': 4,\
+    'n_tries': 8,\
+    'code_size': 4\
+\}\
+\
+\
+class SettingsWindow(Toplevel):\
+\
+    def __init__(self, game_area):\
+        super().__init__()\
+        self.bg_color = 'wheat'\
+        self.config(bg=self.bg_color)\
+        self.title("Pr\'e9f\'e9rences")\
+        self.resizable(False, False)\
+        self.game_area = game_area\
+\
+        paddings = \{'padx': (12, 12), 'pady': (12, 12)\}\
+\
+        Label(self, text="Nombre de couleurs en jeu :", bg=self.bg_color) \\\
+            .grid(row=0, column=0, columnspan=2, sticky='nws', **paddings)\
+        self.n_colors_box = Spinbox(self, from_=4, to=8)\
+        self.n_colors_box.grid(row=0, column=2, columnspan=2, sticky='nes', **paddings)\
+\
+        Label(self, text="Nombre maximum d'essais :", bg=self.bg_color) \\\
+            .grid(row=1, column=0, sticky='nws', **paddings)\
+        self.n_tries_box = Combobox(self, values=[8, 10, 12, 14])\
+        self.n_tries_box.grid(row=1, column=2, columnspan=2, sticky='nes', **paddings)\
+        self.n_tries_box.current(0)\
+\
+        Label(self, text="Taille du code \'e0 trouver :", bg=self.bg_color) \\\
+            .grid(row=2, column=0, columnspan=2, sticky='nws', **paddings)\
+        self.code_size_var = IntVar(value=SETTINGS['code_size'])\
+        Radiobutton(self, text="Facile (4)", variable=self.code_size_var, value=4, bg=self.bg_color) \\\
+            .grid(row=2, column=1, **paddings)\
+        Radiobutton(self, text="Moyen (6)", variable=self.code_size_var, value=6, bg=self.bg_color) \\\
+            .grid(row=2, column=2, **paddings)\
+        Radiobutton(self, text="Difficile (8)", variable=self.code_size_var, value=8, bg=self.bg_color) \\\
+            .grid(row=2, column=3, **paddings)\
+\
+        Button(self, text="Annuler", command=self.destroy, bg=self.bg_color) \\\
+            .grid(row=3, column=0, columnspan=2, sticky='nesw', **paddings)\
+        Button(self, text="Appliquer", command=self.apply, bg=self.bg_color) \\\
+            .grid(row=3, column=2, columnspan=2, sticky='nesw', **paddings)\
+\
+        self.bind("<Escape>", lambda _event: self.destroy())\
+\
+    def apply(self):\
+        global SETTINGS\
+        SETTINGS['n_colors'] = int(self.n_colors_box.get())\
+        SETTINGS['n_tries'] = int(self.n_tries_box.get())\
+        SETTINGS['code_size'] = int(self.code_size_var.get())\
+        self.game_area.new_game()\
+        self.destroy()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf0 \
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf2 from random import randrange\
+\
+from tkinter import BOTH, S, X\
+from tkinter import Canvas, Label, LabelFrame, PhotoImage\
+from tkinter.ttk import Button\
+\
+from preferences import ALL_COLORS, SETTINGS\
+\
+\
+class GameArea(LabelFrame):\
+\
+    EXTERNAL_OFFSET = 30\
+    OFFSET_X = 20\
+    OFFSET_Y = 20\
+    DIAMETER = 20\
+    SMALL_DIAMETER = 10\
+\
+    def __init__(self, **kwargs):\
+        super().__init__(**kwargs)\
+        self.secret_code = None\
+        self.main_cv = None\
+        self.new_game_button = None\
+        self.active_row = 0\
+        self.selected_color = None\
+        self.victory_image = None\
+        self.failure_image = None\
+        self.new_game()\
+\
+    def new_game(self):\
+        if self.main_cv is not None:\
+            self.main_cv.destroy()\
+        if self.new_game_button is not None:\
+            self.new_game_button.destroy()\
+        self.active_row = 0\
+        self.generate_fields()\
+        self.secret_code = self.make_secret()\
+        self.set_gameplay()\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf0     \cf2 def generate_fields(self):\
+        n_colors = SETTINGS['n_colors']\
+        code_size = SETTINGS['code_size']\
+        n_tries = SETTINGS['n_tries']\
+        colors = ALL_COLORS[:n_colors]\
+\
+        # Create the canvas in which the game takes place:\
+        self.main_cv = Canvas(self, bg="sienna", cursor="hand")\
+        self.main_cv.pack(expand=True, fill=BOTH)\
+\
+        # Draw the field of choices, a white rectangle with the pegs of all colors that can be picked:\
+        band_width = self.OFFSET_X+self.DIAMETER\
+        self.main_cv.create_rectangle(self.EXTERNAL_OFFSET, self.EXTERNAL_OFFSET,\
+                                      self.EXTERNAL_OFFSET+self.OFFSET_X+band_width,\
+                                      self.EXTERNAL_OFFSET+self.OFFSET_Y+n_colors*(self.DIAMETER+self.OFFSET_Y),\
+                                      fill="white")\
+        offsets = (self.EXTERNAL_OFFSET+self.OFFSET_X, self.EXTERNAL_OFFSET+self.OFFSET_Y,\
+                   self.EXTERNAL_OFFSET+self.OFFSET_X+self.DIAMETER, self.EXTERNAL_OFFSET+self.OFFSET_Y+self.DIAMETER)\
+        for color in colors:\
+            self.main_cv.create_oval(*offsets, fill=color, tags=color+'_choice')\
+            offsets = (offsets[0], offsets[1]+self.OFFSET_Y+self.DIAMETER,\
+                       offsets[2], offsets[3]+self.OFFSET_Y+self.DIAMETER)\
+\
+        # Draw the field of guesses, a white rectangle with initially empty (white) slots:\
+        left_offset = 2*self.EXTERNAL_OFFSET + band_width + self.OFFSET_X\
+        self.main_cv.create_rectangle(left_offset, self.EXTERNAL_OFFSET,\
+                                      left_offset+code_size*band_width+self.OFFSET_X,\
+                                      self.EXTERNAL_OFFSET+self.OFFSET_Y+n_tries*(self.DIAMETER+self.OFFSET_Y),\
+                                      fill="white")\
+        for j in range(code_size):\
+            offsets = (left_offset + self.OFFSET_X + j*(self.DIAMETER+self.OFFSET_X),\
+                       self.EXTERNAL_OFFSET + self.OFFSET_Y,\
+                       left_offset + (j+1)*(self.DIAMETER+self.OFFSET_X),\
+                       self.EXTERNAL_OFFSET + self.OFFSET_Y + self.DIAMETER)\
+            for i in range(n_tries):\
+                self.main_cv.create_oval(*offsets, fill='white', tags='_'.join([str(i), str(j), 'guess']))\
+                offsets = (offsets[0], offsets[1] + self.OFFSET_Y + self.DIAMETER, offsets[2],\
+                           offsets[3] + self.OFFSET_Y + self.DIAMETER)\
+\
+        # Restart:\
+        self.new_game_button = Button(self, text='Nouvelle partie [F5]', command=self.new_game)\
+        self.new_game_button.pack(anchor=S, fill=X)\
+        self.master.bind("<F5>", lambda _x: self.new_game())\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf0 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf3     \cf2 def set_gameplay(self):\
+\
+        def interpret_click(event):\
+            selected_item = self.main_cv.find_closest(event.x, event.y)\
+            try:\
+                selected_tag, _ = self.main_cv.gettags(selected_item)\
+            except ValueError:\
+                return\
+\
+            # The tags of the pickable colors are of the form "<color>_choice":\
+            if 'choice' in selected_tag:\
+                self.selected_color = selected_tag.split('_')[0]\
+\
+            # The tags of the settable slots are of the form "<row_index>_<column_index>_guess":\
+            elif 'guess' in selected_tag:\
+                selected_row = int(selected_tag.split('_')[0])\
+                if selected_row == self.active_row and self.selected_color is not None:\
+                    self.main_cv.itemconfig(selected_item, fill=self.selected_color)\
+                    # Detect if the row is fully filled:\
+                    all_row_items = [self.main_cv.find_withtag('_'.join([str(selected_row), str(j), 'guess']))\
+                                     for j in range(SETTINGS['code_size'])]\
+                    all_row_colors = [self.main_cv.itemcget(item, 'fill') for item in all_row_items]\
+                    if 'white' not in all_row_colors:\
+                        all_scores = self.compute_scores(all_row_colors)\
+                        self.draw_scores(*all_scores)\
+                        self.active_row += 1\
+                        if all_scores[0] == SETTINGS['code_size']:\
+                            self.make_victory()\
+                        elif self.active_row == SETTINGS['n_tries']:\
+                            self.make_failure()\
+\
+        self.main_cv.bind('<Button-1>', interpret_click)\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf0 \
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf0     \cf2 def compute_scores(self, row_colors):\
+        """\
+        Compute the scores.\
+\
+        The "badly placed" score should take into account duplicates and reflect their occurences in the secrect code.\
+        """\
+        badly_placed_colors = \{color: 0 for color in row_colors\}\
+        for color in row_colors:\
+            n_occurences_in_secret = self.secret_code.count(color)\
+            if badly_placed_colors[color] < n_occurences_in_secret:\
+                badly_placed_colors[color] += 1\
+\
+        exact_matches = \{color: 0 for color in row_colors\}\
+        for color, secret_color in zip(row_colors, self.secret_code):\
+            if color == secret_color:\
+                exact_matches[color] += 1\
+                badly_placed_colors[color] -= 1\
+\
+        n_badly_placed = sum(badly_placed_colors.values())\
+        n_exact_matches = sum(exact_matches.values())\
+\
+        return n_exact_matches, n_badly_placed\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf0 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf0     \cf2 def draw_scores(self, n_exact, n_badly_placed):\
+        code_size = SETTINGS['code_size']\
+        diameters_delta = self.DIAMETER - self.SMALL_DIAMETER\
+        left_offset = 3*self.EXTERNAL_OFFSET + 2*self.OFFSET_X + (code_size+1)*(self.OFFSET_X+self.DIAMETER)\
+        row_offset = self.EXTERNAL_OFFSET + self.OFFSET_Y + self.active_row*(self.OFFSET_Y+self.DIAMETER)\
+        offsets = (left_offset+0.5*diameters_delta, row_offset+0.5*diameters_delta,\
+                   left_offset+0.5*diameters_delta+self.SMALL_DIAMETER,\
+                   row_offset+0.5*diameters_delta+self.SMALL_DIAMETER)\
+        for _ in range(n_exact):\
+            self.main_cv.create_oval(offsets[0], offsets[1],\
+                                     offsets[2], offsets[3],\
+                                     fill='black')\
+            offsets = (offsets[0]+self.SMALL_DIAMETER+self.OFFSET_X, offsets[1],\
+                       offsets[2]+self.SMALL_DIAMETER+self.OFFSET_X, offsets[3])\
+        for _ in range(n_badly_placed):\
+            self.main_cv.create_oval(offsets[0], offsets[1],\
+                                     offsets[2], offsets[3],\
+                                     fill='white')\
+            offsets = (offsets[0]+self.SMALL_DIAMETER+self.OFFSET_X, offsets[1],\
+                       offsets[2]+self.SMALL_DIAMETER+self.OFFSET_X, offsets[3])\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf0 \
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf3 \
+\pard\pardeftab720\pardirnatural\partightenfactor0
+\cf3    \cf2  def make_victory(self):\
+        self.active_row = SETTINGS['n_tries']\
+        self.victory_image = PhotoImage(file='winner_cup.gif').subsample(3)\
+        left_offset = 20 * self.EXTERNAL_OFFSET\
+        row_offset = 10 * self.EXTERNAL_OFFSET\
+        self.main_cv.create_image(left_offset, row_offset, image=self.victory_image)\
+\
+    def make_failure(self):\
+        self.failure_image = PhotoImage(file='fail.gif').subsample(3)\
+        left_offset = 20 * self.EXTERNAL_OFFSET\
+        row_offset = 10 * self.EXTERNAL_OFFSET\
+        self.main_cv.create_image(left_offset, row_offset, image=self.failure_image)\
+\pard\pardeftab720\pardirnatural\qj\partightenfactor0
+\cf2 \
+}
